@@ -9,6 +9,6 @@
         </ul>
     </div>
     <div class="navbar-extra">
-        <a href="#" class="cart-link"><i class="bi bi-cart-fill"></i> Cart</a>
+        <a href="cart.php" class="cart-link"><i class="bi bi-cart-fill"></i> Cart</a>
     </div>
 </nav>
