@@ -7,7 +7,7 @@ include 'components/navbar.php';
 // Helper function to find an item by its ID
 function findItemById($items, $id) {
     foreach ($items as $item) {
-        if ($item['id'] == $id) {
+        if (isset($item['id']) && $item['id'] == $id) {
             return $item;
         }
     }
@@ -36,15 +36,22 @@ function findItemById($items, $id) {
                     $grandTotal = 0;
                     foreach ($_SESSION['cart'] as $mealId => $itemData):
                         $itemDetails = findItemById($menuItems, $mealId);
-                        if ($itemDetails):
-                            $subtotal = $itemDetails['price'] * $itemData['quantity'];
+
+                        // ✅ Ensure item exists and has required keys
+                        if ($itemDetails && isset($itemDetails['name'], $itemDetails['price'])):
+                            $quantity = isset($itemData['quantity']) ? (int)$itemData['quantity'] : 1;
+                            $subtotal = $itemDetails['price'] * $quantity;
                             $grandTotal += $subtotal;
                     ?>
                         <tr>
                             <td><?= htmlspecialchars($itemDetails['name']) ?></td>
                             <td>$<?= number_format($itemDetails['price'], 2) ?></td>
                             <td>
-                                <input type="number" name="quantities[<?= $mealId ?>]" value="<?= $itemData['quantity'] ?>" min="1" style="width: 60px;">
+                                <input type="number" 
+                                       name="quantities[<?= $mealId ?>]" 
+                                       value="<?= $quantity ?>" 
+                                       min="1" 
+                                       style="width: 60px;">
                             </td>
                             <td>$<?= number_format($subtotal, 2) ?></td>
                         </tr>
