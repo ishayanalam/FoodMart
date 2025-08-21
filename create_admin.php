@@ -7,4 +7,6 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 $sql = "INSERT INTO admin (username, password) VALUES ('$username', '$hashedPassword')";
 $connection->query($sql);
+
+echo "Admin created successfully!";
 ?>
