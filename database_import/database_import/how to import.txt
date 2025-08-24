@@ -1,0 +1,2 @@
+1. Create new database named foodMart
+2. Import this database into that database using phpMyAdmin

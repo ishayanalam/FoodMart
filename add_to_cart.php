@@ -26,4 +26,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['meal_id'])) {
 // 6. Redirect the user back to the menu page.
 //    (Change 'browse_food.php' if your menu has a different name).
 header("Location: browse_food.php");
-exit(); // Always stop the script after a redirect.
+exit(); // Always stop the script after a redirect.
