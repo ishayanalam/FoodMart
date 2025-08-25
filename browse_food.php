@@ -67,5 +67,4 @@ foreach ($categories as $category):
 
         </div> </div> <?php endforeach; ?>
 
-
 <?php include 'components/footer.php'; ?>
