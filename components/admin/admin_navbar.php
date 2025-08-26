@@ -6,7 +6,7 @@
 
         <li class="nav-heading">Order Options</li>
         <li><a href="admin_order_received.php">Order Received</a></li>
-        <li><a href="#">Order Confirmed</a></li>
+        <li><a href="admin_order_confirmed.php">Order Confirmed</a></li>
         <li><a href="#">Ready for Delivery</a></li>
 
         <li class="nav-heading">Customers</li>
