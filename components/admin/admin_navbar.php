@@ -2,7 +2,7 @@
     <h1>FoodMart</h1>
     <nav>
       <ul>
-        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="admin_dashboard.php" class="active">Dashboard</a></li>
 
         <li class="nav-heading">Order Options</li>
         <li><a href="admin_order_received.php">Order Received</a></li>
