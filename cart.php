@@ -15,7 +15,7 @@ function findItemById($items, $id) {
 }
 ?>
 
-<div class="page-container" style="padding: 2rem;">
+<div class="page-container" style="padding: 2rem;">   
     <h1>Your Shopping Cart</h1>
 
     <?php if (empty($_SESSION['cart'])): ?>
