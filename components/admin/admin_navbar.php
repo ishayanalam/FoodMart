@@ -14,7 +14,7 @@
 
         <li class="nav-heading">Product</li>
         <li><a href="#">Edit Product</a></li>
-        <li><a href="#">Add Product</a></li>
+        <li><a href="admin_addProduct.php">Add Product</a></li>
         <li><a href="#">Remove Product</a></li>
       </ul>
     </nav>
