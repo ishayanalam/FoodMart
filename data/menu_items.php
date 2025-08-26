@@ -97,7 +97,7 @@ $menuItems = [
     [
         'id' => 12,
         'category' => "Burger",
-        'picture_url' => "beef_burger.png",
+        'picture_url' => "Gourmet_Beef_Burger.webp",
         'meal_name' => "Gourmet Beef Burger",
         'meal_description' => "A thick, juicy beef patty with melted cheddar cheese, caramelized onions, and pickles on a soft potato bun.",
         'price' => "650",
