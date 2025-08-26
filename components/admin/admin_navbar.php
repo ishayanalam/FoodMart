@@ -13,9 +13,9 @@
         <li><a href="admin_customer_show.php">Show Customers</a></li>
 
         <li class="nav-heading">Product</li>
-        <li><a href="#">Edit Product</a></li>
+        <li><a href="admin_product_edit.php">Edit Product</a></li>
         <li><a href="admin_addProduct.php">Add Product</a></li>
-        <li><a href="#">Remove Product</a></li>
+        <!-- <li><a href="#">Remove Product</a></li> -->
       </ul>
     </nav>
     <div>
