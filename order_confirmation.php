@@ -102,7 +102,7 @@ $stmt->close();
 
     <p class="total">Total Amount: ৳ <?php echo number_format($orderDetails['total_amount'],2); ?></p>
 
-    <a class="back-link" href="browse_food.php">Continue Shopping</a>
+    <a class="back-link" href="browse_food.php">Back To Home!</a>
 </div>
 
 </body>
