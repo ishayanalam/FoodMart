@@ -104,6 +104,5 @@ $stmt->close();
 
     <a class="back-link" href="browse_food.php">Back To Home!</a>
 </div>
-
 </body>
 </html>
