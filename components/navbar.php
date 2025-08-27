@@ -4,7 +4,7 @@
         <ul class="navbar-links">
             <li><a href="index.php">Home</a></li>
             <li><a href="browse_food.php">Find Your Meal</a></li>
-            <li><a href="chefs.php">Our Chefs</a></li>
+
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>
