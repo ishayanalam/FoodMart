@@ -2,14 +2,14 @@
 session_start();
 require_once 'db_connection.php';
 
-// Get the order ID from the URL
+// get the order ID from the URL
 $orderId = $_GET['order_id'] ?? null;
 if (!$orderId) {
     echo "Order not found. <a href='browse_food.php'>Go back</a>.";
     exit();
 }
 
-// Fetch order details
+//fetch order details
 $stmt = $connection->prepare("
     SELECT o.order_id, o.total_amount, o.order_status, o.order_date,
            c.name AS customer_name, c.phone, c.address
@@ -27,7 +27,7 @@ if (!$orderDetails) {
     exit();
 }
 
-// Fetch order items
+// fetch order items
 $stmt = $connection->prepare("
     SELECT product_name, quantity, price
     FROM order_item
