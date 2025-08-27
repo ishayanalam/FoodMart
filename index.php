@@ -10,7 +10,7 @@
 
     <div class="category-list">
         <div class="each-category">
-            <img src="assets/categories/Baked.png" />
+            <img src="assets/categories/bakery.png" />
             <p class="category-name">Bakery</p>
         </div>
         <div class="each-category">
@@ -22,7 +22,7 @@
             <p class="category-name">Chicken</p>
         </div>
         <div class="each-category">
-            <img src="assets/categories/Coffee.png" />
+            <img src="assets/categories/Beverage.png" />
             <p class="category-name">Baverage</p>
         </div>
         <div class="each-category">
@@ -45,26 +45,23 @@
     <div class="services">
         <div class="feature-card">
             <img src="assets/location.png" alt="Wide selection of restaurants" />
-            <h2>Wide selection of restaurants</h2>
+            <h2>Wide selection of Food</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-                tristique.
+                Discover a variety of local restaurants and cuisines all in one place.
             </p>
         </div>
         <div class="feature-card">
             <img src="assets/time-frame.png" alt="fast delivery" />
             <h2>Fast delivery within 20 min</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-                tristique.
+                Get your favorite meals delivered quickly and fresh, right to your door.
             </p>
         </div>
         <div class="feature-card">
             <img src="assets/easy.png" alt="easy ordering" />
             <h2>Easy ordering process</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh
-                tristique.
+                Place orders effortlessly with a simple and user-friendly interface.
             </p>
         </div>
     </div>
