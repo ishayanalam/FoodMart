@@ -4,7 +4,7 @@ require_once 'db_connection.php';
 
 
 if (!isset($_SESSION['order_id'])) {
-    header('Location: browse_food.php');
+    header('Location: process_order.php');
     exit();
 }
 
@@ -44,7 +44,7 @@ unset($_SESSION['order_id']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Confirmation</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -79,7 +79,7 @@ unset($_SESSION['order_id']);
             </tbody>
         </table>
 
-        <p><a href="browse_food.php">Continue Shopping</a></p>
+        <p><a href="browse_food.php">Thanks For Your Order! Continue Shopping</a></p>
     </div>
 
 </body>

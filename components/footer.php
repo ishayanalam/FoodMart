@@ -11,7 +11,7 @@ FoodMart brings your community’s flavors right to your doorstep.
         </div>
 
         <div class="footer-social">
-            <h3>Maneg Your Businesses</h3>
+            <h3>Manage Your Businesses</h3>
             <ul>
                 <li><a href="admin_login_form.php">Admin Login</a></li>
               
