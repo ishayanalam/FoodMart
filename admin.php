@@ -1,7 +1,7 @@
 <?php include 'components/admin/admin_header.php'; ?>
 
 <div class="container">
-    <?php include 'components/admin/admin_navbar.php'; ?>   <!-- sidebar inside container -->
+    <?php include 'components/admin/admin_navbar.php'; ?>   
 
     <main class="main-content">
         
