@@ -48,6 +48,6 @@ foreach ($_SESSION['cart'] as $mealId => $itemData) {
 unset($_SESSION['cart']);
 
 // Redirect to a confirmation page
-header('Location: order_confirmation.php?order_id=' . $orderId);
+header('Location: order_details.php');
 exit();
 ?>
