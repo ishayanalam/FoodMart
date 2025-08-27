@@ -19,6 +19,6 @@
       </ul>
     </nav>
     <div>
-      <a href="#" class="logout-link">Logout</a>
+   <a href="admin_logout.php" class="logout-link">Logout</a>
     </div>
 </aside>
