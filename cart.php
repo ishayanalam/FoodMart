@@ -25,10 +25,10 @@ function findItemById($items, $id) {
             <table class="cart-table" style="width: 100%; border-collapse: collapse;">
                 <thead>
                     <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th style="width: 150px;">Quantity</th>
-                        <th>Total</th>
+                        <th style="text-align: left;">Product</th>
+                        <th style="text-align: right;">Price</th>
+                        <th style="text-align: center; width: 150px;">Quantity</th>
+                        <th style="text-align: right;">Total</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,24 +42,24 @@ function findItemById($items, $id) {
                     ?>
                         <tr>
                             <td><?php echo htmlspecialchars($itemDetails['meal_name']); ?></td>
-                            <td>Tk. <?php echo htmlspecialchars($itemDetails['price']); ?></td>
-                            <td>
-                                <input type="number" name="quantities[<?php echo $mealId; ?>]" value="<?php echo $itemData['quantity']; ?>" min="0" style="width: 60px;">
+                            <td style="text-align: right;">Tk. <?php echo htmlspecialchars($itemDetails['price']); ?></td>
+                            <td style="text-align: center;">
+                                <input type="number" name="quantities[<?php echo $mealId; ?>]" value="<?php echo $itemData['quantity']; ?>" min="0" style="width: 60px; text-align: center;">
                             </td>
-                            <td>Tk. <?php echo number_format($subtotal, 2); ?></td>
+                            <td style="text-align: right;">Tk. <?php echo number_format($subtotal, 2); ?></td>
                         </tr>
                     <?php endif; endforeach; ?>
                 </tbody>
                 <tfoot>
                     <tr>
                         <th colspan="3" style="text-align: right;">Grand Total</th>
-                        <th>Tk. <?php echo number_format($grandTotal, 2); ?></th>
+                        <th style="text-align: right;">Tk. <?php echo number_format($grandTotal, 2); ?></th>
                     </tr>
                 </tfoot>
             </table>
             <div style="text-align: right; margin-top: 1rem;">
                 <button type="submit" name="update_cart">Update Cart</button>
-                 <a href="checkout.php" class="button-primary">Proceed to Checkout</a>
+                <a href="checkout.php" class="button-primary">Proceed to Checkout</a>
             </div>
         </form>
     <?php endif; ?>
