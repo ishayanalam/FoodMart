@@ -47,7 +47,6 @@ foreach ($_SESSION['cart'] as $mealId => $itemData) {
 // cart clear
 unset($_SESSION['cart']);
 
-// Redirect to a confirmation page
 header('Location: order_details.php');
 exit();
 ?>

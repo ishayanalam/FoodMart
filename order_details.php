@@ -2,9 +2,8 @@
 session_start();
 require_once 'db_connection.php';
 
-// Check if the order is confirmed (i.e., from the previous script)
+
 if (!isset($_SESSION['order_id'])) {
-    // If order id is not set, redirect to the homepage or order page
     header('Location: browse_food.php');
     exit();
 }
