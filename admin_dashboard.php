@@ -164,7 +164,7 @@ $month_category_orders = $connection->query("
     </div>
 
     <!-- Today Section -->
-    <h1>Today</h1>
+
     <div class="cards-row">
         <div class="card">
             <h3>Orders Today</h3>
