@@ -30,10 +30,19 @@ if ($result && $result->num_rows > 0) {
         $menuItems[$row['id']] = $row;
     }
 }
+
+// Update session cart with meal names and price
+foreach ($cartItems as $mealId => $itemData) {
+    if (isset($menuItems[$mealId])) {
+        $_SESSION['cart'][$mealId]['meal_name'] = $menuItems[$mealId]['meal_name'];
+        $_SESSION['cart'][$mealId]['price'] = $menuItems[$mealId]['price'];
+    }
+}
+
 ?>
 
 <div class="page-container" style="padding: 2rem; max-width:1100px; margin:auto; display:flex; gap:40px;">
-    
+
     <!-- Left: Order Summary -->
     <div style="flex:2;">
         <h2>Order Summary</h2>
@@ -47,19 +56,17 @@ if ($result && $result->num_rows > 0) {
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($cartItems as $mealId => $itemData): 
-                    $item = $menuItems[$mealId] ?? null;
-                    if ($item):
-                        $subtotal = $item['price'] * $itemData['quantity'];
-                        $totalAmount += $subtotal;
+                <?php foreach ($_SESSION['cart'] as $mealId => $itemData): 
+                    $subtotal = $itemData['price'] * $itemData['quantity'];
+                    $totalAmount += $subtotal;
                 ?>
                     <tr>
-                        <td style="padding:10px;"><?php echo htmlspecialchars($item['meal_name']); ?></td>
-                        <td style="padding:10px; text-align:right;">Tk. <?php echo number_format($item['price'], 2); ?></td>
+                        <td style="padding:10px;"><?php echo htmlspecialchars($itemData['meal_name']); ?></td>
+                        <td style="padding:10px; text-align:right;">Tk. <?php echo number_format($itemData['price'], 2); ?></td>
                         <td style="padding:10px; text-align:center;"><?php echo $itemData['quantity']; ?></td>
                         <td style="padding:10px; text-align:right;">Tk. <?php echo number_format($subtotal, 2); ?></td>
                     </tr>
-                <?php endif; endforeach; ?>
+                <?php endforeach; ?>
             </tbody>
             <tfoot style="background:#f9fafb; font-weight:bold;">
                 <tr>
