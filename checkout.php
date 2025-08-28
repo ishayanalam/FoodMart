@@ -43,7 +43,7 @@ foreach ($cartItems as $mealId => $itemData) {
 
 <div class="page-container" style="padding: 2rem; max-width:1100px; margin:auto; display:flex; gap:40px;">
 
-    <!-- Left: Order Summary -->
+    <!-- Left part -->
     <div style="flex:2;">
         <h2>Order Summary</h2>
         <table style="width:100%; border-collapse: collapse; background:#fff; border-radius:8px; overflow:hidden;">
@@ -77,7 +77,7 @@ foreach ($cartItems as $mealId => $itemData) {
         </table>
     </div>
 
-    <!-- Right: Delivery Information -->
+    <!-- Right Part -->
     <div style="flex:1; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.05);">
         <h2>Delivery Information</h2>
         <form action="process_order.php" method="POST" style="display:flex; flex-direction:column; gap:12px;">
@@ -96,7 +96,7 @@ foreach ($cartItems as $mealId => $itemData) {
                 <input type="text" name="phone" required style="width:100%; padding:8px;">
             </label>
 
-            <!-- Pass total hidden -->
+           
             <input type="hidden" name="total_amount" value="<?php echo $totalAmount; ?>">
 
             <button type="submit" 

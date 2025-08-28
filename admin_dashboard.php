@@ -29,7 +29,7 @@ $today_category_orders = $connection->query("
     ORDER BY c.name ASC
 ");
 
-// -------------------- THIS MONTH'S METRICS --------------------
+// MONTH REPORTS
 $this_month = date('Y-m');
 $month_orders = $connection->query("SELECT COUNT(*) AS total FROM orders WHERE DATE_FORMAT(order_date,'%Y-%m')='$this_month'")->fetch_assoc()['total'];
 $month_sales = $connection->query("SELECT COALESCE(SUM(total_amount),0) AS total FROM orders WHERE DATE_FORMAT(order_date,'%Y-%m')='$this_month'")->fetch_assoc()['total'];

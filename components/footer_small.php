@@ -3,7 +3,10 @@
         <div class="footer-about">
             <h2 class="footer-logo">FoodMart</h2>
             <p>
-               
+                FoodMart is a convenient online food ordering app designed to support local businesses.
+The app highlights local eateries, helping small restaurants reach more customers.
+With an easy-to-use interface, ordering your favorite meals has never been simpler.
+FoodMart brings your community’s flavors right to your doorstep.
             </p>
         </div>
 

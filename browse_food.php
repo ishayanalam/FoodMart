@@ -4,7 +4,7 @@ require_once 'db_connection.php';
 include 'components/header.php';
 include 'components/navbar.php';
 
-// --- DYNAMIC CATEGORY ICONS ---
+
 $categories_sql = "SELECT name, image_url FROM categories ORDER BY name ASC";
 $categories_result = $connection->query($categories_sql);
 ?>
@@ -21,9 +21,9 @@ $categories_result = $connection->query($categories_sql);
 </div>
 
 <?php
-// --- DYNAMIC MENU ---
 
-// Fetch ALL products (both available and unavailable)
+
+
 $menu_sql = "
     SELECT 
         p.product_id AS id,

@@ -5,7 +5,7 @@ $username = "admin";
 $password = "admin";
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
-// Check if admin already exists
+// check if admin exists
 $stmt = $connection->prepare("SELECT username FROM admin WHERE username = ?");
 $stmt->bind_param("s", $username);
 $stmt->execute();
@@ -18,7 +18,7 @@ if ($stmt->num_rows > 0) {
 }
 $stmt->close();
 
-// Insert new admin
+// instert admin code
 $stmt = $connection->prepare("INSERT INTO admin (username, password) VALUES (?, ?)");
 $stmt->bind_param("ss", $username, $hashedPassword);
 if ($stmt->execute()) {

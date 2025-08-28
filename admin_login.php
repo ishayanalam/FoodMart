@@ -6,7 +6,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Use prepared statement to prevent SQL injection
+    // prevent SQL injection
     $stmt = $connection->prepare("SELECT password FROM admin WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
