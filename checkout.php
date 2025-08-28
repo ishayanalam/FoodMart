@@ -96,7 +96,7 @@ foreach ($cartItems as $mealId => $itemData) {
                 <input type="text" name="phone" required style="width:100%; padding:8px;">
             </label>
 
-            <!-- Pass total hidden -->
+            
             <input type="hidden" name="total_amount" value="<?php echo $totalAmount; ?>">
 
             <button type="submit" 
